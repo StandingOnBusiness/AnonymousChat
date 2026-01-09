@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    /* Vibrant Colors */
+    --primary: #4f46e5;
+    --primary-light: #818cf8;
+    --primary-dark: #3730a3;
+    --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* Deep Violet/Blue */
+    --btn-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+    --bg-card: rgba(255, 255, 255, 0.95);
+    /* Glass effect */
+    --bg-card-hover: rgba(255, 255, 255, 1);
+
+    --text-main: #1f2937;
+    --text-muted: #6b7280;
+    --border: #e5e7eb;
+
+    --radius: 1rem;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+    /* Map vars */
+    --color-primary: var(--primary);
+    --color-primary-dark: var(--primary-dark);
+    --color-bg: #f3f4f6;
+    /* Fallback */
+    --color-surface: var(--bg-card);
+    --color-text-main: var(--text-main);
+    --color-text-muted: var(--text-muted);
+    --color-border: var(--border);
+    --radius-lg: var(--radius);
+    --shadow-md: var(--shadow);
+    --radius-full: 9999px;
+
+    color: var(--text-main);
+    background-color: var(--bg-page);
+    /* Fallback */
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background: var(--bg-gradient);
+    background-attachment: fixed;
+    /* Keep gradient fixed on scroll */
+}
+
+button {
+    font-family: inherit;
+}
+
+/* Gradient Button Styles */
+.btn-primary,
+button.btn-primary,
+button {
+    background: var(--btn-gradient) !important;
+    color: white !important;
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.875rem;
+}
+
+.btn-primary:hover,
+button.btn-primary:hover,
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    filter: brightness(1.1);
+}
+
+.btn-secondary,
+button.btn-secondary {
+    background: white !important;
+    color: var(--primary) !important;
+    border: 2px solid transparent !important;
+    /* Spacing for gradient border if wanted, or just plain */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.btn-secondary:hover,
+button.btn-secondary:hover {
+    background: #f9fafb !important;
+    transform: translateY(-1px);
+}
+
+/* Back button override */
+.btn-back,
+button.btn-back {
+    background: transparent !important;
+    box-shadow: none !important;
+    color: var(--text-muted) !important;
+    padding: 0.5rem !important;
+    text-transform: none;
+}
+
+.btn-back:hover,
+button.btn-back:hover {
+    background: rgba(0, 0, 0, 0.05) !important;
+    transform: none !important;
+    color: var(--primary) !important;
+}
+
+/* Glassmorphism Card overrides */
+.login-card,
+.lobby-card,
+.chat-card,
+.modal,
+.main-header {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicació Segura - Pràctica de Criptografia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Comunicació Segura</h1>
+            <p>Genera claus, signa i encripta missatges per comunicar-te de forma segura.</p>
+        </header>
+
+        <main>
+            <!-- SECTION 1: KEY MANAGEMENT -->
+            <section class="card key-management">
+                <h2>1. Gestió de Claus</h2>
+                <div class="actions">
+                    <button id="btnGenerateKeys" class="btn primary">Generar Claus</button>
+                    <span id="keysStatus" class="status-text">No s'han generat claus</span>
+                </div>
+
+                <div class="grid-2">
+                    <div class="input-group">
+                        <label for="myPublicKey">La Meva Clau Pública (Per compartir)</label>
+                        <textarea id="myPublicKey" readonly placeholder="Les claus apareixeran aquí..."></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="myPrivateKey">La Meva Clau Privada (NO compartir)</label>
+                        <textarea id="myPrivateKey" readonly placeholder="Les claus apareixeran aquí..."
+                            class="private"></textarea>
+                    </div>
+                </div>
+
+                <div class="input-group full-width">
+                    <label for="remotePublicKey">Clau Pública Remota (Enganxa aquí la clau de l'altre usuari)</label>
+                    <textarea id="remotePublicKey"
+                        placeholder="Enganxa el JSON de la clau pública de l'altre usuari..."></textarea>
+                </div>
+            </section>
+
+            <!-- SECTION 2: SEND MESSAGE -->
+            <section class="card send-message">
+                <h2>2. Enviar Missatge (Signar i Encriptar)</h2>
+
+                <div class="input-group">
+                    <label for="messageInput">El teu missatge</label>
+                    <textarea id="messageInput" placeholder="Escriu el missatge secret..."></textarea>
+                </div>
+
+                <div class="actions">
+                    <button id="btnSign" class="btn secondary" disabled>1. Signar Missatge</button>
+                    <button id="btnEncrypt" class="btn primary" disabled>2. Encriptar Missatge Signat</button>
+                </div>
+
+                <div class="grid-2">
+                    <div class="input-group">
+                        <label for="signedMessage">Pas Intermig: Missatge Signat (JSON)</label>
+                        <textarea id="signedMessage" readonly placeholder="Resultat de la signatura..."></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="encryptedOutput">Resultat Final: Missatge Encriptat (Copiar i enviar)</label>
+                        <textarea id="encryptedOutput" readonly placeholder="Resultat per enviar a l'altre usuari..."
+                            class="highlight"></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 3: RECEIVE MESSAGE -->
+            <section class="card receive-message">
+                <h2>3. Rebre Missatge (Desencriptar i Validar)</h2>
+
+                <div class="input-group">
+                    <label for="receivedEncrypted">Missatge Encriptat Rebut</label>
+                    <textarea id="receivedEncrypted"
+                        placeholder="Enganxa aquí el missatge encriptat rebut..."></textarea>
+                </div>
+
+                <div class="actions">
+                    <button id="btnDecrypt" class="btn primary" disabled>Desencriptar i Validar Signatura</button>
+                </div>
+
+                <div class="result-area" id="decryptionResult">
+                    <!-- Results will be injected here -->
+                    <div class="placeholder-result">El resultat apareixerà aquí</div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
