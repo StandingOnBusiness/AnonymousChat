@@ -59,7 +59,7 @@ const emit = defineEmits(['login-success'])
 <template>
   <div class="login-view-wrapper">
     <div class="login-card fade-in">
-      <h2>Welcome to SecureChat</h2>
+      <h2>Welcome to P2PChat</h2>
       <div class="intro-text">
         <p>
           This is a fully anonymous, peer-to-peer chat application. 
@@ -87,10 +87,10 @@ const emit = defineEmits(['login-success'])
     <transition name="fade">
       <div v-if="showInfo" class="modal-overlay" @click.self="showInfo = false">
         <div class="modal">
-          <h3>Why SecureChat?</h3>
+          <h3>Why P2PChat?</h3>
           <div class="info-content">
             <p>
-              I built SecureChat because I was tired of chat services that require accounts, 
+              I built P2PChat because I was tired of chat services that require accounts, 
               store your personal data, and track your every move with cookies. 
               Privacy shouldn't be optional—it should be the default.
             </p>

@@ -1,7 +1,7 @@
 # Security & Cryptography Documentation (`src/status/CryptoService.js`)
 
 ## Overview
-SecureChat uses **Hybrid Encryption** combining RSA (for key exchange/signing) and AES (for efficient message encryption). All operations use the browser's native **Web Crypto API** (`window.crypto.subtle`) for maximum performance and security.
+P2PChat uses **Hybrid Encryption** combining RSA (for key exchange/signing) and AES (for efficient message encryption). All operations use the browser's native **Web Crypto API** (`window.crypto.subtle`) for maximum performance and security.
 
 ## Algorithms Used
 1.  **RSA-OAEP (2048-bit)**: Used for encrypting the symmetric AES key.

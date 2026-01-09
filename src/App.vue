@@ -227,7 +227,7 @@ import { stringToColor, stringToTextColor } from './util/color'
     <header class="main-header">
       <div class="brand">
         <span class="logo-icon">🔐</span>
-        <h1 class="gradient-text">SecureChat</h1>
+        <h1 class="gradient-text">P2PChat</h1>
       </div>
       <div v-if="myUsername" class="user-profile">
         <span 

@@ -1,7 +1,7 @@
-# SecureChat Architecture Documentation
+# P2PChat Architecture Documentation
 
 ## Overview
-SecureChat is an anonymous, peer-to-peer (mock P2P via relay), end-to-end encrypted chat application. It allows users to connect with strangers via a lobby and chat securely without creating accounts or storing data on a server.
+P2PChat is an anonymous, peer-to-peer (mock P2P via relay), end-to-end encrypted chat application. It allows users to connect with strangers via a lobby and chat securely without creating accounts or storing data on a server.
 
 ## Technology Stack
 - **Frontend**: Vue.js 3 (Vite)
