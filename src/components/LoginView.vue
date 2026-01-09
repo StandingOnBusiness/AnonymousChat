@@ -119,6 +119,11 @@ const emit = defineEmits(['login-success'])
 </template>
 
 <style scoped>
+.login-view-wrapper {
+  /* Default: just a block wrapper */
+  width: 100%;
+}
+
 .login-card {
   background: var(--color-surface);
   padding: 2.5rem;
@@ -295,5 +300,29 @@ button:disabled {
 
 .btn-close:hover {
   background: #e5e7eb;
+}
+
+@media (max-width: 640px) {
+  .login-view-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login-card {
+    padding: 1.5rem;
+    margin-top: 0;
+    margin: 0;
+  }
+  
+  .modal {
+    padding: 1.5rem;
+    width: 95%;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+  }
 }
 </style>

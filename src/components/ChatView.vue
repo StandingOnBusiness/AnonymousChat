@@ -247,4 +247,28 @@ button {
 button:hover {
   background: var(--color-primary-dark);
 }
+
+@media (max-width: 640px) {
+  .chat-card {
+    height: 100%; /* Fill parent flex container */
+    border-radius: 0;
+  }
+  
+  header {
+    padding: 0.75rem 1rem;
+  }
+  
+  .messages {
+    padding: 1rem;
+  }
+  
+  .input-area {
+    padding: 0.75rem;
+    gap: 0.5rem;
+  }
+  
+  button {
+    padding: 0 1rem;
+  }
+}
 </style>

@@ -131,8 +131,6 @@ const unavailableUsers = computed(() => {
 .lobby-card {
   background: var(--color-surface);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
-  border: 1px solid var(--color-border);
   overflow: hidden;
   height: 600px; /* Fixed height for scrolling */
   display: flex;
@@ -346,5 +344,21 @@ button:disabled {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 640px) {
+  .lobby-card {
+    height: 100%; /* Fill parent flex container */
+    border-radius: 0; /* Optional: remove radius on full mobile */
+  }
+  
+  .lobby-header {
+    padding: 1rem;
+  }
+  
+  .section-title, .user-item {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 </style>

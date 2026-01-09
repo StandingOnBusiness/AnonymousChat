@@ -450,4 +450,37 @@ import { stringToColor, stringToTextColor } from './util/color'
   transform: translateY(-20px);
   opacity: 0;
 }
+
+@media (max-width: 640px) {
+  /* Lock Layout on Mobile */
+  .app-layout {
+    height: 100vh;
+    overflow: hidden;
+    min-height: unset;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 1rem 0.5rem;
+    height: 100%;
+  }
+
+  .main-header {
+    padding: 0.75rem 1rem;
+  }
+  
+  .brand h1 {
+    font-size: 1.25rem;
+  }
+  
+  .logo-icon {
+    height: 32px;
+  }
+  
+  .app-container {
+    padding: 1rem 0.5rem;
+  }
+}
 </style>
