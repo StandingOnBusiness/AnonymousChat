@@ -1,4 +1,5 @@
-# Secure Anonymous Chat
+# Secure Anonymous Chat (Named P2PChat)
+# https://p2p-chat.net
 
 An end-to-end encrypted, peer-to-peer style chat application built with Vue.js, Node.js, and the Web Crypto API.
 
