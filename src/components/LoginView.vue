@@ -63,8 +63,8 @@ const emit = defineEmits(['login-success'])
       <div class="intro-text">
         <p>
           This is a fully anonymous, peer-to-peer chat application. 
-          Your messages are end-to-end encrypted using keys generated right here in your browser. 
-          No one—not even the server—can read your chats. 
+          P2PChat offers **private chat app** functionality where your messages are end-to-end encrypted using keys generated right here in your browser. 
+          No one—not even the server—can read your **p2p messaging**. 
           Once you reload or leave, your identity and keys are wiped forever.
         </p>
       </div>
@@ -92,7 +92,7 @@ const emit = defineEmits(['login-success'])
             <p>
               I built P2PChat because I was tired of chat services that require accounts, 
               store your personal data, and track your every move with cookies. 
-              Privacy shouldn't be optional—it should be the default.
+              As a **no login chat**, privacy shouldn't be optional—it should be the default.
             </p>
             <h4>How it works</h4>
             <p>

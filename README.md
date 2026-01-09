@@ -2,6 +2,9 @@
 
 An end-to-end encrypted, peer-to-peer style chat application built with Vue.js, Node.js, and the Web Crypto API.
 
+**Live at: [https://p2p-chat.net](https://p2p-chat.net)**
+
+
 ## About the Project
 
 This is a passion project I've had in mind for a long time. As a **Web Developer student at Accenture**, I wanted to challenge myself to build a truly private communication tool where the server knows nothing about the conversation. After diving deep into modern web technologies and cryptography, I finally brought this vision to life.
