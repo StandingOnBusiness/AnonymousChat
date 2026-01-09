@@ -24,7 +24,7 @@ The easiest way to run the application is using Docker.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/AnonymousChat.git
+git clone https://github.com/StandingOnBusiness/AnonymousChat.git
 cd AnonymousChat
 
 # Start the application
