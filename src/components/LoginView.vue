@@ -95,7 +95,7 @@ const emit = defineEmits(['login-success'])
             <p>
               I built P2PChat because I was tired of chat services that require accounts, 
               store your personal data, and track your every move with cookies. 
-              As a **no login chat**, privacy shouldn't be optional—it should be the default.
+              As a <strong>"no login chat"</strong>, privacy shouldn't be optional—it should be the default.
             </p>
             <h4>How it works</h4>
             <p>
