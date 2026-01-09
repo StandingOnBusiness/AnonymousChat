@@ -2,7 +2,7 @@
 
 An end-to-end encrypted, peer-to-peer style chat application built with Vue.js, Node.js, and the Web Crypto API.
 
-## 🚀 About the Project
+## About the Project
 
 This is a passion project I've had in mind for a long time. As a **Web Developer student at Accenture**, I wanted to challenge myself to build a truly private communication tool where the server knows nothing about the conversation. After diving deep into modern web technologies and cryptography, I finally brought this vision to life.
 
@@ -12,13 +12,13 @@ This is a passion project I've had in mind for a long time. As a **Web Developer
 -   **Ephemeral**: All data is stored in RAM. Refreshing the specific page or restarting the server wipes everything clean.
 -   **Modern UI**: Built with Vue 3 and purely custom CSS (Glassmorphism, animated gradients).
 
-## 🛠️ Tech Stack
+## Tech Stack
 -   **Frontend**: Vue.js 3, Vite
 -   **Backend**: Node.js, Socket.io
 -   **Security**: Native Web Crypto API
 -   **Infrastructure**: Docker
 
-## 📦 How to Run
+## How to Run
 
 The easiest way to run the application is using Docker.
 
@@ -35,7 +35,7 @@ Once running, access the app at:
 -   **Frontend**: http://localhost:5173
 -   **Backend**: http://localhost:3000
 
-## 📂 Documentation
+## Documentation
 
 For a deep dive into how everything works, check out the `docs/` folder:
 -   [Architecture](docs/ARCHITECTURE.md)
@@ -43,4 +43,4 @@ For a deep dive into how everything works, check out the `docs/` folder:
 -   [Backend Logic](docs/SERVER.md)
 
 ---
-*Built with ❤️ by a future Full Stack Developer.*
+*Built with love & disgust by a future Full Stack Developer.*
