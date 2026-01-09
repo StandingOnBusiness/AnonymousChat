@@ -63,8 +63,8 @@ const emit = defineEmits(['login-success'])
       <div class="intro-text">
         <p>
           This is a fully anonymous, peer-to-peer chat application. 
-          P2PChat offers **private chat app** functionality where your messages are end-to-end encrypted using keys generated right here in your browser. 
-          No one—not even the server—can read your **p2p messaging**. 
+          P2PChat offers private messaging functionality where your messages are end-to-end encrypted using keys generated right here in your browser. 
+          No one—not even the server—can read your p2p messaging. 
           Once you reload or leave, your identity and keys are wiped forever.
         </p>
       </div>
@@ -78,6 +78,9 @@ const emit = defineEmits(['login-success'])
           @keyup.enter="login"
         />
         <button @click="login" :disabled="!username">Enter</button>
+        <p class="username-warning">
+          Note: Your username is temporary. If you reload the page, you will lose your identity and current chats.
+        </p>
       </div>
 
       <button class="btn-info" @click="showInfo = true">More Information</button>
@@ -203,6 +206,17 @@ button:disabled {
   opacity: 0.7;
   cursor: not-allowed;
   background: var(--color-text-muted);
+}
+
+.username-warning {
+  font-size: 0.8rem;
+  color: #d97706; /* Amber-600 */
+  margin-top: 0.5rem;
+  background: #fffbeb; /* Amber-50 */
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  border: 1px solid #fcd34d; /* Amber-300 */
+  line-height: 1.4;
 }
 
 .btn-info {
