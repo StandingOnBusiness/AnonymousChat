@@ -43,4 +43,4 @@ For a deep dive into how everything works, check out the `docs/` folder:
 -   [Backend Logic](docs/SERVER.md)
 
 ---
-*Built with love & disgust by a future Full Stack Developer.*
+*Built with love & disgust (towards information stealing companies) by a future Full Stack Developer.*
