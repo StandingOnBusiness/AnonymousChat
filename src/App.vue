@@ -226,7 +226,7 @@ import { stringToColor, stringToTextColor } from './util/color'
     <!-- APP HEADER -->
     <header class="main-header">
       <div class="brand">
-        <span class="logo-icon">🔐</span>
+        <img src="/p2p-logo.png" alt="P2P Chat Logo" class="logo-icon" />
         <h1 class="gradient-text">P2PChat</h1>
       </div>
       <div v-if="myUsername" class="user-profile">
@@ -315,6 +315,11 @@ import { stringToColor, stringToTextColor } from './util/color'
   font-size: 1.5rem;
   font-weight: 800;
   margin: 0;
+}
+
+.logo-icon {
+  height: 38px;
+  width: auto;
 }
 
 .gradient-text {
