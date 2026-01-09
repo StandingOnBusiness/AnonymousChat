@@ -217,7 +217,7 @@ header {
 textarea {
   flex: 1;
   resize: none;
-  height: 48px;
+  height: 38px;
   padding: 0.75rem;
   border: 1px solid var(--color-border);
   border-radius: 0.5rem;
