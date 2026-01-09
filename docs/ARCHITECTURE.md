@@ -12,8 +12,8 @@ SecureChat is an anonymous, peer-to-peer (mock P2P via relay), end-to-end encryp
 ## Architecture Diagram
 ```mermaid
 graph TD
-    UserA[User A (Browser)] <-->|Encrypted Socket Events| Server[Node.js Server]
-    Server <-->|Encrypted Socket Events| UserB[User B (Browser)]
+    UserA["User A (Browser)"] <-->|Encrypted Socket Events| Server["Node.js Server"]
+    Server <-->|Encrypted Socket Events| UserB["User B (Browser)"]
     
     subgraph Browser
         UI[Vue Components]
