@@ -8,6 +8,7 @@ import LoginView from './components/LoginView.vue'
 import LobbyView from './components/LobbyView.vue'
 import ChatView from './components/ChatView.vue'
 import ToastContainer from './components/ToastContainer.vue'
+import TextEditorView from './components/TextEditorView.vue'
 
 // --- STATE ---
 const view = ref('login') // 'login', 'lobby', 'chat'
@@ -25,7 +26,15 @@ let typingTimeout = null
 
 // --- SOCKET EVENTS ---
 
+// --- SOCKET EVENTS ---
+
 onMounted(() => {
+  // Simple "Routing" check
+  if (window.location.pathname === '/text-editor') {
+    view.value = 'text-editor'
+    return
+  }
+
   // 1. User List Update
   socket.on('update_users', (users) => {
     connectedUsers.value = users
@@ -244,7 +253,7 @@ import { stringToColor, stringToTextColor } from './util/color'
       </div>
     </header>
 
-    <main class="app-container">
+    <main class="app-container" :class="{ 'fluid-container': view === 'text-editor' }">
       <!-- MODAL -->
       <transition name="fade">
         <div v-if="incomingRequest" class="modal-overlay">
@@ -261,8 +270,10 @@ import { stringToColor, stringToTextColor } from './util/color'
 
       <!-- VIEWS -->
       <transition name="slide-fade" mode="out-in">
+        <TextEditorView v-if="view === 'text-editor'" />
+
         <LoginView 
-          v-if="view === 'login'"
+          v-else-if="view === 'login'"
           @login-success="handleLoginSuccess"
         />
 
@@ -360,6 +371,11 @@ import { stringToColor, stringToTextColor } from './util/color'
   width: 100%;
   margin: 0 auto;
   padding: 2rem 1rem;
+}
+
+.app-container.fluid-container {
+  max-width: 98vw;
+  padding: 1rem;
 }
 
 /* Modal */
