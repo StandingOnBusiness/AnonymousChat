@@ -8,38 +8,53 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-LHF16Q3S7N');
     </script>
 
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>P2PChat – Anonymous Messaging</title>
     <meta name="description"
         content="P2P Chat is a secure, anonymous peer-to-peer chat platform with no accounts, no tracking, and end-to-end privacy." />
 
-    <!-- Open Graph tags -->
+    <!-- Open Graph (Social Sharing) -->
     <meta property="og:title" content="P2P Chat" />
     <meta property="og:description" content="Anonymous peer-to-peer chat with full privacy." />
     <meta property="og:url" content="https://p2p-chat.net" />
     <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://p2p-chat.net/favicon-32x32.png" />
 
-    <!-- Structured Data -->
+    <!-- Structured Data: Organization (Google uses this for your logo) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "P2P Chat",
+      "url": "https://p2p-chat.net",
+      "logo": "https://p2p-chat.net/favicon-32x32.png"
+    }
+    </script>
+
+    <!-- Structured Data: WebApplication (optional but good for SEO) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
       "name": "P2P Chat",
       "url": "https://p2p-chat.net",
-      "description": "Anonymous peer-to-peer chat platform with no accounts or tracking."
+      "applicationCategory": "Communication",
+      "operatingSystem": "All"
     }
     </script>
 </head>
+
 
 <body>
     <div id="app"></div>
