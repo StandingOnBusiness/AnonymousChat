@@ -244,7 +244,7 @@ import { stringToColor, stringToTextColor } from './util/color'
       </div>
     </header>
 
-    <div class="app-container">
+    <main class="app-container">
       <!-- MODAL -->
       <transition name="fade">
         <div v-if="incomingRequest" class="modal-overlay">
@@ -283,7 +283,7 @@ import { stringToColor, stringToTextColor } from './util/color'
           @back="handleLeaveChat" 
         />
       </transition>
-    </div>
+    </main>
   </div>
 </template>
 

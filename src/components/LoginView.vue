@@ -157,7 +157,7 @@ h2 {
 }
 
 .status {
-  color: var(--color-text-muted);
+  color: var(--color-text-main);
   margin-bottom: 1.5rem;
   font-size: 0.875rem;
   padding: 0.75rem;
@@ -215,7 +215,7 @@ button:disabled {
 
 .username-warning {
   font-size: 0.8rem;
-  color: #d97706; /* Amber-600 */
+  color: #92400e; /* Amber-800 */
   margin-top: 0.5rem;
   background: #fffbeb; /* Amber-50 */
   padding: 0.5rem;
