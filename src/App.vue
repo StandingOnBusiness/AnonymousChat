@@ -374,8 +374,9 @@ import { stringToColor, stringToTextColor } from './util/color'
 }
 
 .app-container.fluid-container {
-  max-width: 98vw;
+  max-width: 100%;
   padding: 1rem;
+  box-sizing: border-box;
 }
 
 /* Modal */

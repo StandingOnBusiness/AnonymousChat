@@ -130,7 +130,7 @@ const emit = defineEmits(['login-success'])
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   text-align: center;
-  max-width: 420px;
+  max-width: 500px;
   width: 100%;
   margin: 4rem auto 0;
   border: 1px solid var(--color-border);

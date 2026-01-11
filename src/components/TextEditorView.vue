@@ -31,7 +31,7 @@ const fontSize = ref(64)
           type="range" 
           v-model="fontSize" 
           min="24" 
-          max="150" 
+          max="300" 
           class="range-input"
         />
       </div>
@@ -53,7 +53,6 @@ const fontSize = ref(64)
 .preview-card {
   padding: 3rem;
   border-radius: var(--radius-lg);
-  min-width: 800px;
   min-height: 200px;
   text-align: center;
   background: white; /* Clean background for screenshot */
